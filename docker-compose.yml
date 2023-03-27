@@ -2,6 +2,7 @@ version: '3.9'
 
 services:
   wol-next:
+    image: ghcr.io/lumpi2k/wol-next:latest
     build: .
     ports:
       - '3000:3000'
