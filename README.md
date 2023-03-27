@@ -18,6 +18,7 @@ nano .env.local
 npm install
 npm run dev
 ```
+Your app now lives on http://localhost:3000
 
 ## Docker
 I run this app on a raspberry pi. Using docker compose:
@@ -30,5 +31,12 @@ nano .env.local
 # insert your Mac address
 docker compose up -d
 ```
+### Change Container Port
+I've attached the Container to the host network, so the magic packet doesn't get filtered by any docker network settings. If you want to change the port the app listens on, you'll have to change it in the `Dockerfile` and rebuild the app locally.
+
+```bash
+docker compose build && docker compose up -d
+```
+
 ## Special Thanks
 I wrote not a single line of code myself. The heavy lifting was done by ChatGPT.

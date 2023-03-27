@@ -9,9 +9,39 @@
   .center {
     text-align: center;
   }
-  
+
+  .wakeUpButton:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #990a84 0%, #3480f3 100% );
+    transform: translate3d(0px, 0px, 0) scale(0.95);
+    filter: blur(39px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+.wakeUpButton::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
 .wakeUpButton {
   display: inline-block;
+  position: relative;
+  background: white;
   background-image: linear-gradient(135deg, #3480f3 0%, #990a84 100%);
   border: none;
   border-radius: 50%;
