@@ -1,0 +1,58 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+.wakeUpButton {
+  display: inline-block;
+  background-image: linear-gradient(135deg, #3480f3 0%, #990a84 100%);
+  border: none;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  line-height: 150px;
+  transition: transform 0.3s;
+}
+
+.wakeUpButton:hover {
+  transform: scale(1.05);
+}
+
+.wakeUpButton:active {
+  transform: scale(0.95);
+}
+
+.alert {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  position: absolute; 
+  top: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.successAlert {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.errorAlert {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
